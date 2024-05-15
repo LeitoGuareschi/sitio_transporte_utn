@@ -2,7 +2,6 @@
 /* Azul: 2e64a1 */
 
 
-
 body{
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
@@ -26,6 +25,7 @@ header h1{
 
 nav{
     background-color: #6da9ed;
+    margin-bottom: 20px;
 }
 
 nav ul{
@@ -60,6 +60,7 @@ footer{
     background-color: #ccc;
     padding: 20PX 0;
     text-align: center;
+    margin-top: 20px;
 }
 
 .holder{
@@ -74,16 +75,161 @@ h2{
 
 /* Inicio home */
 
+.columnas{
+    display: flex;
+}
+
 .bienvenidos{
     width: 75%;
+    padding-right: 20px;
+    /* background-color: yellow; */
 }
 
 .testimonios{
     width: 25%;
 }
+.bienvenidos p {
+    font-size: 20px;
+}
 
+.testimonio {
+    background-color: #ccc;
+    padding: 16px;
+}
 
+.testimonio .cita{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    display: block;
+}
+
+.testimonio .autor{
+    font-size: 12px;
+    /* background-color: lightcoral; */
+    text-align: center;
+    display: block;
+    margin: 16px 0;
+}
 
 
 /* fin home */
 
+
+/* inicio nosotros */
+
+.historia p {
+    font-size: 12px;
+}
+
+.personas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.persona{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    width: 18%;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.persona img{
+    border-radius: 50%;
+    box-shadow: 0 0 3px #000;
+    width: 50%;
+    margin: 10px 0 12px;
+    /* margin-top: 12px; */
+}
+
+.persona h5,
+.persona h6{
+    color: #2e64a1;
+    margin: 0;
+    font-weight: normal;
+}
+
+.persona h5{
+    font-size: 14px;
+}
+
+.persona h6{
+    font-style: italic;
+    font-size: 13px;
+}
+
+.persona p{
+    font-size: 12px;
+}
+/* Fin nosotros */
+
+
+/* inicio contacto */
+
+.contacto{
+    display: flex;
+}
+
+.contacto div{
+    width: 100%;
+}
+
+.datos p{
+    font-size: 14px;
+}
+
+.datos ul li{
+    font-size: 13px;
+}
+
+.formulario p{
+    display: flex
+}
+
+.formulario p label{
+min-width: 100px;
+background-color: yellow;
+}
+
+.formulario p input,
+.formulario p textarea{
+    width: 100%;
+    background-color: #ccc;
+    border: 1px solid #f60404;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 14px;
+}
+
+.formulario p textarea{
+    resize: none;
+    height: 150px;
+}
+
+.formulario input[type=submit]{
+    background-color: #6da9ed;
+    width: auto;
+    padding: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    cursor: pointer;
+    position: relative;
+    left: 100px;
+
+}
+
+/* 
+text-align.>p
+display. felx, justify conttent:center--> */
+
+
+
+/* fin contacto */
+
+/* 
+ajustar input/ textarea > otras vias
+nombre > medio del rect amarillo eje vertical
+iconos > cual serian los pasos
+*/

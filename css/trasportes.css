@@ -2,18 +2,18 @@
 /* Azul: 2e64a1 */
 
 
-body{
+body {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 20px;
 }
 
-header{
+header {
     background-color: #2e64a1;
     padding-top: 20px;
 }
 
-header h1{
+header h1 {
     color: white;
     font-weight: 100;
     font-style: italic;
@@ -23,71 +23,75 @@ header h1{
     bottom: 35px;
 }
 
-nav{
+nav {
     background-color: #6da9ed;
     margin-bottom: 20px;
 }
 
-nav ul{
+nav ul {
     margin: 0;
     padding: 0;
-    list-style: none; /*saca el putno*/
+    list-style: none;
+    /*saca el putno*/
     display: flex;
 }
 
-nav ul li{
+nav ul li {
     flex-grow: 1;
 }
 
-nav ul li a{
+nav ul li a {
     color: white;
-    text-decoration: none; /*saca la linea*/
+    text-decoration: none;
+    /*saca la linea*/
     /* background-color: orange; */
     padding: 3px 0;
     display: flex;
     justify-content: center;
 }
 
-nav ul li a:hover{
-    background-color: rgba(0, 0, 0, 0.3); /*la combinacion de 0,0,0 da negro*/
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    /*la combinacion de 0,0,0 da negro*/
 }
 
-nav ul li a.activo{
+nav ul li a.activo {
     background-color: #4c76a5;
 }
 
-footer{
+footer {
     background-color: #ccc;
     padding: 20PX 0;
     text-align: center;
     margin-top: 20px;
 }
 
-.holder{
+.holder {
     width: 960px;
     margin: 0 auto;
 }
 
-h2{
+h2 {
     color: #2e64a1;
     font-weight: 400;
 }
 
 /* Inicio home */
 
-.columnas{
+.columnas {
     display: flex;
 }
 
-.bienvenidos{
+.bienvenidos {
     width: 75%;
     padding-right: 20px;
     /* background-color: yellow; */
 }
 
-.testimonios{
+.testimonios {
     width: 25%;
 }
+
 .bienvenidos p {
     font-size: 20px;
 }
@@ -97,14 +101,14 @@ h2{
     padding: 16px;
 }
 
-.testimonio .cita{
+.testimonio .cita {
     font-weight: bold;
     font-style: italic;
     font-size: 20px;
     display: block;
 }
 
-.testimonio .autor{
+.testimonio .autor {
     font-size: 12px;
     /* background-color: lightcoral; */
     text-align: center;
@@ -122,12 +126,12 @@ h2{
     font-size: 12px;
 }
 
-.personas{
+.personas {
     display: flex;
     justify-content: space-between;
 }
 
-.persona{
+.persona {
     border: 1px solid #ddd;
     border-radius: 5px;
     text-align: center;
@@ -136,7 +140,7 @@ h2{
     box-sizing: border-box;
 }
 
-.persona img{
+.persona img {
     border-radius: 50%;
     box-shadow: 0 0 3px #000;
     width: 50%;
@@ -145,80 +149,95 @@ h2{
 }
 
 .persona h5,
-.persona h6{
+.persona h6 {
     color: #2e64a1;
     margin: 0;
     font-weight: normal;
 }
 
-.persona h5{
+.persona h5 {
     font-size: 14px;
 }
 
-.persona h6{
+.persona h6 {
     font-style: italic;
     font-size: 13px;
 }
 
-.persona p{
+.persona p {
     font-size: 12px;
 }
+
 /* Fin nosotros */
 
 
 /* inicio contacto */
 
-.contacto{
+.contacto {
     display: flex;
+    gap: 30px;
 }
 
-.contacto div{
+.contacto div {
     width: 100%;
 }
 
-.datos p{
+.datos p {
     font-size: 14px;
 }
 
-.datos ul li{
+.datos ul li {
     font-size: 13px;
 }
 
-.formulario p{
-    display: flex
-}
+/* .formulario p {
+    display: flex; hace que el label + input esten en la misma linea
+} */
 
-.formulario p label{
-min-width: 100px;
-background-color: yellow;
+.formulario p label {
+    min-width: 100px;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
 }
 
 .formulario p input,
-.formulario p textarea{
+.formulario p textarea {
     width: 100%;
     background-color: #ccc;
-    border: 1px solid #f60404;
+    border: 1px solid #aaa;
     border-radius: 5px;
     padding: 6px;
     font-size: 14px;
+    box-sizing: border-box;
 }
 
-.formulario p textarea{
+.formulario p textarea {
     resize: none;
     height: 150px;
 }
 
-.formulario input[type=submit]{
+/* .formulario p:nth-child(4){
+    background-color: orange;
+    align-items: start;
+} */
+
+.formulario input[type=submit] {
     background-color: #6da9ed;
     width: auto;
     padding: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     color: white;
     cursor: pointer;
-    position: relative;
-    left: 100px;
-
+    /* position: relative;
+    left: 100px; */
 }
+
+.foermulario input[type="submit"]:hover {
+    background-color: #2e64a1;
+}
+
+
 
 /* 
 text-align.>p
@@ -229,6 +248,7 @@ display. felx, justify conttent:center--> */
 /* fin contacto */
 
 /* 
+hover de enviar
 ajustar input/ textarea > otras vias
 nombre > medio del rect amarillo eje vertical
 iconos > cual serian los pasos

@@ -203,7 +203,7 @@ h2 {
 
 }
 
-.servicio .info p{
+.servicio .info p {
     font-size: 13px;
     line-height: 25px;
 }
@@ -213,6 +213,69 @@ h2 {
 
 
 /* Fin Servicios */
+
+/* Inicio Galeria */
+
+
+.contenedor {
+    max-width: 800px;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.galeria img{
+    border: 2px solid red;
+    padding: 5px;
+}
+
+.galeria {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galeria div img {
+    max-width: 100%;
+    display: block;
+}
+
+.galeria div {
+    margin: 10px;
+    flex-basis: 180px;
+}
+
+.fotos {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.fotos img {
+    display: block;
+    margin: auto;
+}
+
+
+
+
+/* Fin Galeria */
+
 
 /* inicio contacto */
 

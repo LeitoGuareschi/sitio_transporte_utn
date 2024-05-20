@@ -183,6 +183,7 @@ h2 {
     display: flex;
     align-items: center;
     gap: 35px;
+    padding: 5px;
 }
 
 .servicio img {
@@ -208,6 +209,10 @@ h2 {
     line-height: 25px;
 }
 
+/* .servicio:nth-child(even){
+    flex-direction: column-reverse;
+} */
+
 
 
 
@@ -226,7 +231,7 @@ h2 {
     box-sizing: border-box;
 }
 
-.galeria img{
+.galeria img {
     border: 2px solid red;
     padding: 5px;
 }

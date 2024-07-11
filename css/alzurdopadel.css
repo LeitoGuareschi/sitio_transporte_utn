@@ -9,12 +9,12 @@ body {
 }
 
 header {
-    background-color: #2e64a1;
+    background-color: orange;
     padding-top: 20px;
 }
 
 header h1 {
-    color: white;
+    color: blue;
     font-weight: 100;
     font-style: italic;
     /* display: inline-flex; */

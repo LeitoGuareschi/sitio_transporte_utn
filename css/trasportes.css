@@ -232,8 +232,10 @@ h2 {
 }
 
 .galeria img {
-    border: 2px solid red;
-    padding: 5px;
+    background-color: lightskyblue;
+    border: 3px solid black;
+    padding: 2px;
+
 }
 
 .galeria {
